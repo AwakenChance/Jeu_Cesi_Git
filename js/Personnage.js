@@ -1,5 +1,5 @@
 class Personnage{
-    Constructor(Nom,Image,PV,Attack1,Attack2,Attack3,Attack4){
+    constructor(Nom,Image,PV,Attack1,Attack2,Attack3,Attack4){
         this.Nom = Nom;
         this.Image = Image;
         this.PV = PV;
@@ -8,4 +8,5 @@ class Personnage{
         this.Attack3 = Attack4;
         this.Attack4 = Attack3;
     }
+
 }

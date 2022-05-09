@@ -22,17 +22,20 @@ const Tornade = new Attack ('Tornade',15,2,0,0);
 
 const Mage = new Personnage('Mage','./img/Mage.png',30,Boule_de_lumiere,Boule_de_feu,Eclair,Tornade); 
 
+
+//const test = Mage.Attack1
+//console.log(test)
 //Function qui récupère le chemin de l'image
 function GetImage(Perso) {
-    if (Perso = 'Mage')
+    if (Perso == 'Mage')
     {
     return Mage.Image
     }
-     else if (Perso = 'Archer')
+     else if (Perso == 'Archer')
     {
         return Archer.Image
     } 
-    else if (Perso = 'Warrior')
+    else if (Perso == 'Warrior')
     {
         return Warrior.Image
     }
@@ -40,48 +43,51 @@ function GetImage(Perso) {
 
   //Function qui recupere les pv du perso 
   function GetPV(Perso) {
-    if (Perso = 'Mage')
+    if (Perso == 'Mage')
     {
     return Mage.PV
     }
-     else if (Perso = 'Archer')
+     else if (Perso == 'Archer')
     {
         return Archer.PV
     } 
-    else if (Perso = 'Warrior')
+    else if (Perso == 'Warrior')
     {
         return Warrior.PV
     }
   }
   
   //function qui recupere la premiere attack du perso
+
+
   function GetAttack1(Perso) {
-    if (Perso = 'Mage')
+    if (Perso == 'Mage')
     {
     return Mage.Attack1
     }
-     else if (Perso = 'Archer')
+     else if (Perso == 'Archer')
     {
         return Archer.Attack1
     } 
-    else if (Perso = 'Warrior')
+    else if (Perso == 'Warrior')
     {
-        return Warrior.Attack1;
-        console.log(Attack1);
+        //document.getElementById("atck").value =Coup_Epe.Nom;
+        return Coup_Epe.Nom;
+        
     }
   }
 
   //function qui recupere la deuxieme attack du perso
   function GetAttack2(Perso) {
-    if (Perso = 'Mage')
+    if (Perso == 'Mage')
     {
     return Mage.Attack2
     }
-     else if (Perso = 'Archer')
+     else if (Perso == 'Archer')
     {
         return Archer.Attack2
     } 
-    else if (Perso = 'Warrior')
+    else if (Perso == 'Warrior')
     {
         return Warrior.Attack2
     }
@@ -89,15 +95,15 @@ function GetImage(Perso) {
 
   //function qui recupere la troisieme attack du perso
   function GetAttack3(Perso) {
-    if (Perso = 'Mage')
+    if (Perso == 'Mage')
     {
     return Mage.Attack3
     }
-     else if (Perso = 'Archer')
+     else if (Perso == 'Archer')
     {
         return Archer.Attack3
     } 
-    else if (Perso = 'Warrior')
+    else if (Perso == 'Warrior')
     {
         return Warrior.Attack3
     }
@@ -105,15 +111,15 @@ function GetImage(Perso) {
 
   //function qui recupere la quatrieme attack du perso
   function GetAttack4(Perso) {
-    if (Perso = 'Mage')
+    if (Perso == 'Mage')
     {
     return Mage.Attack4
     }
-     else if (Perso = 'Archer')
+     else if (Perso == 'Archer')
     {
         return Archer.Attack4
     } 
-    else if (Perso = 'Warrior')
+    else if (Perso == 'Warrior')
     {
         return Warrior.Attack4
     }

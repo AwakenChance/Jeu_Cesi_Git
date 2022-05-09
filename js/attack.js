@@ -1,5 +1,5 @@
 class Attack{
-    Constructor(Nom,Puissance,Coldown,Heal,Defence){
+    constructor(Nom,Puissance,Coldown,Heal,Defence){
         this.Nom = Nom;
         this.Puissance = Puissance;
         this.Coldown = Coldown;
