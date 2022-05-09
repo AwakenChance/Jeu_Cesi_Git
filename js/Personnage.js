@@ -1,5 +1,5 @@
 class Personnage{
-    Constructor(Nom,Imgage,PV,Attack1,Attack2,Attack3,Attack4){
+    Constructor(Nom,Image,PV,Attack1,Attack2,Attack3,Attack4){
         this.Nom = Nom;
         this.Image = Image;
         this.PV = PV;
