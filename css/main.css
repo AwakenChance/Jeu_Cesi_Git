@@ -1,0 +1,27 @@
+.personnage{
+    grid-template-columns: 50% 50%;
+    display: inline-block;
+    
+}
+.attaque{
+   grid-template-rows: 75% 25%; 
+   display: inline-block;
+}
+
+.character{
+    height: 20%;
+    width: 20%;
+}
+
+.table{
+    background-color: rgb(121, 121, 121);
+    color: black;
+}
+
+.tableTitle{
+    text-align: center;
+}
+
+table{
+    text-align: center;
+}
