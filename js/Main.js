@@ -8,7 +8,7 @@ const Archer = new Personnage('Archer','./img/Archer.png',20,Tir_Normal,Tir_Puis
 
 //Warior
 const Coup_Epe = new Attack ('Coup Epe',15,1,0,0);
-const Coup_Hache = new Attack ('Coup Epe',25,3,0,0);
+const Coup_Hache = new Attack ('Coup Hache',25,3,0,0);
 const Coup_Bouclier = new Attack ('Coup Bouclier',10,3,0,10);
 const Coup_de_Steack = new Attack ('Coup Steack',5,4,0,10);
 
@@ -66,7 +66,8 @@ function GetImage(Perso) {
     } 
     else if (Perso = 'Warrior')
     {
-        return Warrior.Attack1
+        return Warrior.Attack1;
+        console.log(Attack1);
     }
   }
 
