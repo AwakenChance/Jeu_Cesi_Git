@@ -63,16 +63,16 @@ function GetImage(Perso) {
   function GetAttack1(Perso) {
     if (Perso == 'Mage')
     {
-    return Mage.Attack1
+    return Mage.Attack1.Nom
     }
      else if (Perso == 'Archer')
     {
-        return Archer.Attack1
+        return Archer.Attack1.Nom
     } 
     else if (Perso == 'Warrior')
     {
         //document.getElementById("atck").value =Coup_Epe.Nom;
-        return Coup_Epe.Nom;
+        return Warrior.Attack1.Nom;
         
     }
   }
@@ -81,15 +81,15 @@ function GetImage(Perso) {
   function GetAttack2(Perso) {
     if (Perso == 'Mage')
     {
-    return Mage.Attack2
+    return Mage.Attack2.Nom
     }
      else if (Perso == 'Archer')
     {
-        return Archer.Attack2
+        return Archer.Attack2.Nom
     } 
     else if (Perso == 'Warrior')
     {
-        return Warrior.Attack2
+        return Warrior.Attack2.Nom
     }
   }
 
@@ -97,15 +97,15 @@ function GetImage(Perso) {
   function GetAttack3(Perso) {
     if (Perso == 'Mage')
     {
-    return Mage.Attack3
+    return Mage.Attack3.Nom
     }
      else if (Perso == 'Archer')
     {
-        return Archer.Attack3
+        return Archer.Attack3.Nom
     } 
     else if (Perso == 'Warrior')
     {
-        return Warrior.Attack3
+        return Warrior.Attack3.Nom
     }
   }
 
@@ -113,14 +113,14 @@ function GetImage(Perso) {
   function GetAttack4(Perso) {
     if (Perso == 'Mage')
     {
-    return Mage.Attack4
+    return Mage.Attack4.Nom
     }
      else if (Perso == 'Archer')
     {
-        return Archer.Attack4
+        return Archer.Attack4.Nom
     } 
     else if (Perso == 'Warrior')
     {
-        return Warrior.Attack4
+        return Warrior.Attack4.Nom
     }
   }
