@@ -47,11 +47,11 @@ function GetImage(Perso,ID) {
     }
      else if (Perso == 'Archer')
     {
-        document.getElementById(ID).innerHTML =  Mage.PV
+        document.getElementById(ID).innerHTML =  Archer.PV
     } 
     else if (Perso == 'Warrior')
     {
-        document.getElementById(ID).innerHTML =  Mage.PV
+        document.getElementById(ID).innerHTML =  Warrior.PV
     }
   }
   
