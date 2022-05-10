@@ -100,19 +100,19 @@ function GetImage(Perso,ID) {
 
     if (Perso == 'Mage')
     {
-      if (Mage.Attack1.Nom == Attaque)
+      if (Mage.Attack1.Nom == 'attack1')
       {
         Cible.PV = Cible.PV - Mage.Attack1.Puissance
       }
-      else if (Mage.Attack2.Nom == Attaque)
+      else if (Mage.Attack2.Nom == 'attack2')
       {
         Cible.PV = Cible.PV - Mage.Attack2.Puissance
       }
-      else if (Mage.Attack3.Nom == Attaque)
+      else if (Mage.Attack3.Nom == 'attack3')
       {
         Cible.PV = Cible.PV - Mage.Attack3.Puissance
       }
-      else if (Mage.Attack4.Nom == Attaque)
+      else if (Mage.Attack4.Nom == 'attack4')
       {
         Cible.PV = Cible.PV - Mage.Attack4.Puissance
       }
@@ -120,19 +120,19 @@ function GetImage(Perso,ID) {
 
     if (Perso == 'Warrior')
     {
-      if (Warrior.Attack1.Nom == Attaque)
+      if (Warrior.Attack1.Nom == 'attack1')
       {
         Cible.PV = Cible.PV - Warrior.Attack1.Puissance
       }
-      else if (Warrior.Attack2.Nom == Attaque)
+      else if (Warrior.Attack2.Nom == 'attack2')
       {
         Cible.PV = Cible.PV - Warrior.Attack2.Puissance
       }
-      else if (Warrior.Attack3.Nom == Attaque)
+      else if (Warrior.Attack3.Nom == 'attack3')
       {
         Cible.PV = Cible.PV - Warrior.Attack3.Puissance
       }
-      else if (Warrior.Attack4.Nom == Attaque)
+      else if (Warrior.Attack4.Nom == 'attack4')
       {
         Cible.PV = Cible.PV - Warrior.Attack4.Puissance
       }
@@ -140,19 +140,19 @@ function GetImage(Perso,ID) {
 
     if (Perso == 'Archer')
     {
-      if (Archer.Attack1.Nom == Attaque)
+      if (Archer.Attack1.Nom == 'attack1')
       {
         Cible.PV = Cible.PV - Archer.Attack1.Puissance
       }
-      else if (Archer.Attack2.Nom == Attaque)
+      else if (Archer.Attack2.Nom == 'attack2')
       {
         Cible.PV = Cible.PV - Archer.Attack2.Puissance
       }
-      else if (Archer.Attack3.Nom == Attaque)
+      else if (Archer.Attack3.Nom == 'attack3')
       {
         Cible.PV = Cible.PV - Archer.Attack3.Puissance
       }
-      else if (Archer.Attack4.Nom == Attaque)
+      else if (Archer.Attack4.Nom == 'attack4')
       {
         Cible.PV = Cible.PV - Archer.Attack4.Puissance
       }
