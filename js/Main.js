@@ -23,8 +23,6 @@ const Tornade = new Attack ('Tornade',15,2,0,0);
 const Mage = new Personnage('Mage','./img/Mage.png',30,Boule_de_lumiere,Boule_de_feu,Eclair,Tornade); 
 
 
-
-
 //const test = Mage.Attack1
 //console.log(test)
 //Function qui récupère le chemin de l'image
@@ -62,70 +60,31 @@ function GetImage(Perso) {
   //function qui recupere la premiere attack du perso
 
 
-  function GetAttack1(Perso) {
+  function GetAttack(Perso,ID1,ID2,ID3,ID4) {
     if (Perso == 'Mage')
     {
-    return Mage.Attack1.Nom
+        document.getElementById(ID1).innerHTML =Mage.Attack1.Nom;
+        document.getElementById(ID2).innerHTML =Mage.Attack2.Nom;
+        document.getElementById(ID3).innerHTML =Mage.Attack3.Nom;
+        document.getElementById(ID4).innerHTML =Mage.Attack4.Nom;
     }
      else if (Perso == 'Archer')
     {
-        return Archer.Attack1.Nom
+        document.getElementById(ID1).innerHTML =Archer.Attack1.Nom;
+        document.getElementById(ID2).innerHTML =Archer.Attack2.Nom;
+        document.getElementById(ID3).innerHTML =Archer.Attack3.Nom;
+        document.getElementById(ID4).innerHTML =Archer.Attack4.Nom;
     } 
     else if (Perso == 'Warrior')
     {
-        //document.getElementById("atck").value =Coup_Epe.Nom;
-        return Warrior.Attack1.Nom;
+        document.getElementById(ID1).innerHTML =Warrior.Attack1.Nom;
+        document.getElementById(ID2).innerHTML =Warrior.Attack2.Nom;
+        document.getElementById(ID3).innerHTML =Warrior.Attack3.Nom;
+        document.getElementById(ID4).innerHTML =Warrior.Attack4.Nom;
         
     }
   }
 
-  //function qui recupere la deuxieme attack du perso
-  function GetAttack2(Perso) {
-    if (Perso == 'Mage')
-    {
-    return Mage.Attack2.Nom
-    }
-     else if (Perso == 'Archer')
-    {
-        return Archer.Attack2.Nom
-    } 
-    else if (Perso == 'Warrior')
-    {
-        return Warrior.Attack2.Nom
-    }
-  }
-
-  //function qui recupere la troisieme attack du perso
-  function GetAttack3(Perso) {
-    if (Perso == 'Mage')
-    {
-    return Mage.Attack3.Nom
-    }
-     else if (Perso == 'Archer')
-    {
-        return Archer.Attack3.Nom
-    } 
-    else if (Perso == 'Warrior')
-    {
-        return Warrior.Attack3.Nom
-    }
-  }
-
-  //function qui recupere la quatrieme attack du perso
-  function GetAttack4(Perso) {
-    if (Perso == 'Mage')
-    {
-    return Mage.Attack4.Nom
-    }
-     else if (Perso == 'Archer')
-    {
-        return Archer.Attack4.Nom
-    } 
-    else if (Perso == 'Warrior')
-    {
-        return Warrior.Attack4.Nom
-    }
-  }
 
   function Attaquer(Cible,Attaque){
       Cible.PV = Cible.PV - Attaque.Puissance
