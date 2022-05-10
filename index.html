@@ -8,7 +8,7 @@
 <script src="./js/Main.js"> </script>
 <script src="./js/Player.js"> </script>
 </head>
-<body>
+<body onload="GetAttack('Warrior','attack1p2','attack2p2','attack3p2','attack4p2')">
 <h1>Le Jeu de combat</h1>
 <hr/>
 <br/>
@@ -17,7 +17,7 @@
 <table>
     <tr>
         <th scope="col">
-            <img src="./img/Archer.png" alt="luke" height="200px" width="150px">
+            <img src="./img/Archer.png" alt="Archer" height="200px" width="150px">
         </th>
         <td>    
             <table class="table">
@@ -35,7 +35,7 @@
             </table>
         </td>
         <th scope="col">
-            <img src="./img/Warrior.png" alt="vader" height="200px" width="150px">
+            <img src="./img/Warrior.png" alt="Warrior" height="200px" width="150px">
          </th>   
          <td>
             <table class="table">
@@ -43,12 +43,12 @@
                     <th scope="col" class="tableTitle"> Attaques </th>
                 </caption>
                 <tr class="table">
-                    <td ><button onload="GetAttack1('Warrior')" id="attack1"></button></td>
-                    <td ><button> Coup Hâche</button></td>
+                    <td ><button id="attack1p2"></button></td>
+                    <td ><button id="attack2p2"></button></td>
                 </tr>
                 <tr class="table">
-                    <td> <button> Coup Bouclier </button></td>
-                    <td ><button> Coup Steack </button>
+                    <td> <button id="attack3p2"></button></td>
+                    <td ><button id="attack4p2"></button>
                     </td>
                 </tr>
             </table>
