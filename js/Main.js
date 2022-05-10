@@ -127,5 +127,13 @@ function GetImage(Perso) {
 
   function Attaquer(Cible,Attaque){
       Cible.PV = Cible.PV - Attaque.Puissance
-      return Cible.PV
+      
+  }
+
+  function IsDead(Perso){
+      if (Perso.PV <= 0)
+      {
+        return true
+      }
+      else return false
   }
