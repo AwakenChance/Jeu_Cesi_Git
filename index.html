@@ -8,7 +8,7 @@
 <script src="./js/Main.js"> </script>
 <script src="./js/Player.js"> </script>
 </head>
-<body onload="GetAttack('Warrior','attack1p2','attack2p2','attack3p2','attack4p2'), GetAttack('Archer','attack1p1','attack2p1','attack3p1','attack4p1')">
+<body onload="GetAttack('Warrior','attack1p2','attack2p2','attack3p2','attack4p2'), GetAttack('Archer','attack1p1','attack2p1','attack3p1','attack4p1'), GetPV('pv1'), GetPV('pv2')">
 <h1>Le Jeu de combat</h1>
 <hr/>
 <br/>
@@ -42,7 +42,7 @@
     
                 </tr>
                 <tr class="table">
-                    <td>10</td>
+                    <td id="pv1"></td>
                 </tr>
             </table>
         </td>
@@ -72,7 +72,7 @@
 
             </tr>
             <tr class="table">
-                <td>10</td>
+                <td id="pv2"></td>
             </tr>
         </table>
         </td>
