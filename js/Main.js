@@ -124,3 +124,8 @@ function GetImage(Perso) {
         return Warrior.Attack4.Nom
     }
   }
+
+  function Attaquer(Cible,Attaque){
+      Cible.PV = Cible.PV - Attaque.Puissance
+      return Cible.PV
+  }
