@@ -8,7 +8,7 @@
 <script src="./js/Main.js"> </script>
 <script src="./js/Player.js"> </script>
 </head>
-<body onload="GetAttack('Warrior','attack1p2','attack2p2','attack3p2','attack4p2')">
+<body onload="GetAttack('Warrior','attack1p2','attack2p2','attack3p2','attack4p2'), GetAttack('Archer','attack1p1','attack2p1','attack3p1','attack4p1')">
 <h1>Le Jeu de combat</h1>
 <hr/>
 <br/>
@@ -25,12 +25,24 @@
                     <th scope="col" class="tableTitle"> Attaques </th>
                 </caption>
                 <tr class="table">
-                    <td ><button> Lancer de sabre </button></td>
-                    <td ><button> Saut</button></td>
+                    <td ><button id="attack1p1"></button></td>
+                    <td ><button id="attack2p1"></button></td>
                 </tr>
                 <tr class="table">
-                    <td> <button> Coup de sabre </button></td>
-                    <td ><button> Projection de force </button></td>
+                    <td> <button id="attack3p1"></button></td>
+                    <td ><button id="attack4p1"></button></td>
+                </tr>
+            </table>
+            <br/>
+            <table class="table">
+                <caption>
+                    <th scope="col" class="tableTitle"> PV </th>
+                </caption>
+                <tr class="table">
+    
+                </tr>
+                <tr class="table">
+                    <td>10</td>
                 </tr>
             </table>
         </td>
@@ -48,8 +60,7 @@
                 </tr>
                 <tr class="table">
                     <td> <button id="attack3p2"></button></td>
-                    <td ><button id="attack4p2"></button>
-                    </td>
+                    <td ><button id="attack4p2"></button></td>
                 </tr>
             </table>
         </br>
