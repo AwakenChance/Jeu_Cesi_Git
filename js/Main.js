@@ -84,9 +84,66 @@ function GetImage(Perso,ID) {
   }
 
 
-  function Attaquer(Cible,Attaque){
-      Cible.PV = Cible.PV - Attaque.Puissance
-      
+  function Attaquer(Cible,Attaquant,Attaque){
+    if (Perso == 'Mage')
+    {
+      if (Mage.Attack1.Nom == Attaque)
+      {
+        Cible.PV = Cible.PV - Mage.Attack1.Puissance
+      }
+      else if (Mage.Attack2.Nom == Attaque)
+      {
+        Cible.PV = Cible.PV - Mage.Attack2.Puissance
+      }
+      else if (Mage.Attack3.Nom == Attaque)
+      {
+        Cible.PV = Cible.PV - Mage.Attack3.Puissance
+      }
+      else if (Mage.Attack4.Nom == Attaque)
+      {
+        Cible.PV = Cible.PV - Mage.Attack4.Puissance
+      }
+    }
+
+    if (Perso == 'Warrior')
+    {
+      if (Warrior.Attack1.Nom == Attaque)
+      {
+        Cible.PV = Cible.PV - Warrior.Attack1.Puissance
+      }
+      else if (Warrior.Attack2.Nom == Attaque)
+      {
+        Cible.PV = Cible.PV - Warrior.Attack2.Puissance
+      }
+      else if (Warrior.Attack3.Nom == Attaque)
+      {
+        Cible.PV = Cible.PV - Warrior.Attack3.Puissance
+      }
+      else if (Warrior.Attack4.Nom == Attaque)
+      {
+        Cible.PV = Cible.PV - Warrior.Attack4.Puissance
+      }
+    }
+
+    if (Perso == 'Archer')
+    {
+      if (Archer.Attack1.Nom == Attaque)
+      {
+        Cible.PV = Cible.PV - Archer.Attack1.Puissance
+      }
+      else if (Archer.Attack2.Nom == Attaque)
+      {
+        Cible.PV = Cible.PV - Archer.Attack2.Puissance
+      }
+      else if (Archer.Attack3.Nom == Attaque)
+      {
+        Cible.PV = Cible.PV - Archer.Attack3.Puissance
+      }
+      else if (Archer.Attack4.Nom == Attaque)
+      {
+        Cible.PV = Cible.PV - Archer.Attack4.Puissance
+      }
+    }
   }
 
   function IsDead(Perso){
