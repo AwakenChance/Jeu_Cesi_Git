@@ -23,37 +23,35 @@ const Tornade = new Attack ('Tornade',15,2,0,0);
 const Mage = new Personnage('Mage','./img/Mage.png',30,Boule_de_lumiere,Boule_de_feu,Eclair,Tornade); 
 
 
-//const test = Mage.Attack1
-//console.log(test)
 //Function qui récupère le chemin de l'image
-function GetImage(Perso) {
+function GetImage(Perso,ID) {
     if (Perso == 'Mage')
     {
-    return Mage.Image
+        document.getElementById(ID).innerHTML = Mage.Image
     }
      else if (Perso == 'Archer')
     {
-        return Archer.Image
+        document.getElementById(ID).innerHTML = Archer.Image
     } 
     else if (Perso == 'Warrior')
     {
-        return Warrior.Image
+        rdocument.getElementById(ID).innerHTML = Warrior.Image
     }
   }
 
   //Function qui recupere les pv du perso 
-  function GetPV(Perso) {
+  function GetPV(Perso,ID) {
     if (Perso == 'Mage')
     {
-    return Mage.PV
+        document.getElementById(ID).innerHTML =  Mage.PV
     }
      else if (Perso == 'Archer')
     {
-        return Archer.PV
+        document.getElementById(ID).innerHTML =  Mage.PV
     } 
     else if (Perso == 'Warrior')
     {
-        return Warrior.PV
+        document.getElementById(ID).innerHTML =  Mage.PV
     }
   }
   
