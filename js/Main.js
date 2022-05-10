@@ -84,7 +84,20 @@ function GetImage(Perso,ID) {
   }
 
 
-  function Attaquer(Cible,Perso,Attaque){
+  function Attaquer(Cible_txt,Perso,Attaque){
+    if (Cible_txt == 'Mage')
+    {
+        Cible = Mage
+    } else 
+    if (Cible_txt == 'Warrior')
+    {
+        Cible = Warrior
+    } else 
+    if (Cible_txt == 'Archer')
+    {
+        Cible = Archer
+    } 
+
     if (Perso == 'Mage')
     {
       if (Mage.Attack1.Nom == Attaque)
