@@ -23,6 +23,8 @@ const Tornade = new Attack ('Tornade',15,2,0,0);
 const Mage = new Personnage('Mage','./img/Mage.png',30,Boule_de_lumiere,Boule_de_feu,Eclair,Tornade); 
 
 
+
+
 //const test = Mage.Attack1
 //console.log(test)
 //Function qui récupère le chemin de l'image
